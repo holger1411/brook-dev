@@ -1,0 +1,108 @@
+.btn-xl {
+  @include button-size($btn-padding-y-xl, $btn-padding-x-xl, $btn-font-size-xl, $btn-border-radius-xl);
+}
+
+.btn-soft-primary {
+  background-color:$primary-soft;
+  color:$primary;
+  &:hover {
+    background-color:$primary;
+    color:$white;
+  }
+}
+
+.btn-soft-secondary {
+  background-color:$secondary-soft;
+  color:$secondary;
+  &:hover {
+    background-color:$secondary;
+    color:$white;
+  }
+}
+
+.btn-soft-success {
+  background-color:$success-soft;
+  color:$success;
+  &:hover {
+    background-color:$success;
+    color:$white;
+  }
+}
+
+.btn-soft-danger {
+  background-color:$danger-soft;
+  color:$danger;
+  &:hover {
+    background-color:$danger;
+    color:$white;
+  }
+}
+
+.btn-soft-warning {
+  background-color:$warning-soft;
+  color:$warning;
+  &:hover {
+    background-color:$warning;
+    color:$white;
+  }
+}
+
+.btn-soft-info {
+  background-color:$info-soft;
+  color:$info;
+  &:hover {
+    background-color:$info;
+    color:$white;
+  }
+}
+.btn-soft-light{
+  background-color:$light-soft;
+  color:$dark;
+  &:hover {
+    background-color:$light;
+    color:$dark;
+  }
+}
+.btn-soft-dark {
+  background-color:$dark-soft;
+  color:$dark;
+  &:hover {
+    background-color:$dark;
+    color:$white;
+  }
+}
+
+.btn-gradient {
+  background-image: linear-gradient(to right, $accent, $primary);
+  color:$white;
+  &:hover {
+      background-image: linear-gradient(to right, $primary, $accent);
+    color:$white;
+  }
+}
+
+.btn-accent {
+  background-color:$accent;
+  color:$white;
+  &:hover {
+  background-color:$accent;
+    color:$white;
+  }
+}
+.btn-white {
+  background-color:$white;
+  color:$dark;
+  &:hover {
+  background-color:$light;
+    color:$dark;
+  }
+}
+
+.btn-black {
+  background-color:$black;
+  color:$white;
+  &:hover {
+  background-color:$dark;
+    color:$white;
+  }
+}

@@ -1,0 +1,21 @@
+
+$utilities: (
+"opacity": (
+      property: opacity,
+      values: (
+        0: 0,
+        125: .125,
+        25: .25,
+        33: .33,
+        50: .5,
+        66: .66,
+        75: .75,
+        100: 1,
+        )
+      )
+    );
+
+
+.o-50--hover:hover{
+  opacity:.5;
+}

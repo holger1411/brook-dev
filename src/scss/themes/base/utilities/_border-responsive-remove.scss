@@ -1,0 +1,8 @@
+@include media-breakpoint-up(xl) {
+  .border-xl-0 {
+  border-top:none !important;
+  border-right:none !important;
+  border-bottom:none !important;
+  border-left:none !important;
+}
+}

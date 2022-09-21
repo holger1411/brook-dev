@@ -1,0 +1,112 @@
+html {
+  scroll-behavior: smooth;
+}
+body.fixednav {
+  margin-top:108px;
+
+}
+
+body {
+    letter-spacing:-.02rem;
+}
+
+.btn,
+.navbar-collapse.collapsing,
+.megamenu.show,
+.nav-link.collapsed,
+.scrolled,
+.shadow,
+.shadow-light,
+.preloader,
+.navbar,
+a,
+a.link-line,
+a.link-line:before,
+a.hover-hide,
+a.hover-content,
+a.hover-hide::before,
+a.hover-hide .hover-content,
+.navbar-collapse.collapse.show,
+img {
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.transform-scale:hover {
+  transform: scale(1.5,1.5);
+}
+
+.display-huge {
+  font-size: calc( 5rem + 3vw );
+}
+
+
+.intro-content::first-letter {
+    float: left;
+    font-size: 4.5em;
+    padding: .15em .25em 0 0;
+    line-height: 4.5rem;
+}
+
+.bg-cover {
+  background-size:cover;
+  background-position:center center
+}
+.navbar {
+  padding-top:32px;
+  padding-bottom:32px;
+}
+.navbar.scrolled {
+  padding-top:12px;
+  padding-bottom:12px;
+  background-color: rgba(255,255,255,.9);
+}
+
+.display-big {font-size:7rem;}
+
+.link-fancy {
+  color: $primary;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+.link-fancy:hover {
+  color: $gray-600;
+}
+
+.link-fancy:before {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 100%;
+  transform-origin: left;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(90deg, $primary 0, $primary 25%, transparent 0, transparent 50%, $primary 0, $primary 75%, transparent 0, transparent);
+  background-repeat: no-repeat;
+  background-position: 0;
+  background-size: 400% 1px;
+  transition: background-position 0.8s ease-in-out;
+}
+
+.link-fancy:hover:before {
+  background-position: 100%;
+}
+
+.navbar-collapse.collapsing, .navbar-collapse.collapse.show {
+  background-color:$white;
+  padding:10px;
+}
+
+.blockquote-xl {
+  font-size: calc(1rem + 1vw);
+  font-style: italic;
+  font-weight:bolder;
+}
+
+.display-huge {
+    font-size: calc(1.5rem + 1.5vw);
+    font-weight:700;
+    letter-spacing: -.2rem;
+}

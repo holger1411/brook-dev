@@ -1,0 +1,11 @@
+@include media-breakpoint-up(xl) {
+  .scrollx {
+  transform: translateX(calc(max(1140px, 100vw)/2 - 570px));
+}
+}
+
+@include media-breakpoint-up(xxl) {
+  .scrollx {
+  transform: translateX(calc(max(1320px, 100vw)/2 - 660px));
+}
+}

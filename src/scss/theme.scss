@@ -1,0 +1,24 @@
+//Thats your main variable file to set up all the basic design stuff like contrast or accent color, global paddings, font families and more
+@import "themes/base/variables-theme";
+
+// Bootstrap default styles
+@import "assets/bootstrap/bootstrap";
+
+//Thats your main variable file to set up all the basic design stuff like contrast or accent color, global paddings, font families and more
+@import "themes/base/style-theme";
+
+//Additional components or component overwrites
+@import "themes/base/components/buttons";
+@import "themes/base/components/carousel";
+
+//Additional utlities or utility overwrites
+@import "themes/base/utilities/bg-colors";
+@import "themes/base/utilities/bg-soft";
+@import "themes/base/utilities/opacity";
+@import "themes/base/utilities/p-vh";
+@import "themes/base/utilities/m-vw";
+@import "themes/base/utilities/vh";
+@import "themes/base/utilities/border-responsive-remove";
+
+// More 3rd party stuff
+@import "assets/aos/aos";
