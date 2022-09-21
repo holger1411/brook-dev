@@ -1,0 +1,41 @@
+<!doctype html>
+<html class="h-100" lang="{{ metadata.language }}">
+  <head>
+    {% include 'snippets/head.njk' %}
+  </head>
+  <body {% if (bodyModifier) %} class="{{ bodyModifier }}" {% endif %} data-bs-spy="scroll" data-bs-target="#navScroll">
+    {% include "snippets/" + navbar + ".njk" %}
+    <main class="container py-vh-3">
+      <div class="row d-flex justify-content-center text-center">
+        <div class="col-12 col-lg-10 col-xl-6">
+          {% if author %}<small class="text-muted">By
+            {{ author }}</small>{% endif %}
+          <h1 class="display-huge">{{ title }}</h1>
+          <p class="lead pt-2 py-vh-2 {% if img %}{% else %}border-bottom{% endif %}">{{summary}}</p>
+        </div>
+        {% if img %}
+          <div class="row">
+            <div class="col-12">
+              <img src="/img/webp/{{img}}.webp" class="img-fluid">
+
+              <picture class="img-fluid">
+  <source srcset="/img/webp/{{img}}.webp" type="image/webp">
+  <source srcset="/img/{{img}}.jpg" type="image/jpeg">
+  </picture>
+            </div>
+          </div>
+        {% endif %}
+        <div class="row d-flex justify-content-center text-center">
+          <div class="col-12 col-lg-10 col-xl-6 py-vh-2">
+            {{ content | safe }}
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="container d-flex justify-content-between">
+      {% include 'snippets/postprevnext.njk' %}
+    </div>
+    {% include "snippets/" + footer + ".njk" %}
+    <!--{% include 'snippets/footerscripts.njk' %}-->
+  </body>
+</html>

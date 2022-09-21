@@ -1,0 +1,8 @@
+{
+    "layout": "layouts/post.njk",
+    "navbar": "navbar1",
+    "footer": "footer1",
+    "tags": [
+      "posts"
+    ]
+}

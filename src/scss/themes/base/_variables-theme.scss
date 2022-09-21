@@ -60,7 +60,7 @@ $colors: (
 ) !default;
 // scss-docs-end colors-map
 
-$primary:       $blue;
+$primary:       $black;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -84,7 +84,7 @@ $theme-colors: (
 
 
 $font-family-sans-serif:      "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-base:              1.1rem !default; // Assumes the browser default, typically `16px`
 $lead-font-weight:            400;
 $font-weight-light:           400 !default;
 $font-weight-normal:          400 !default;
@@ -93,7 +93,7 @@ $grid-gutter-width:           3vw;
 $border-radius: 0px;
 
 // Shadows
-$box-shadow:                  0 3rem 4rem rgba($black, .25);
+$box-shadow:                  0 3rem 4rem rgba($black, .15);
 $box-shadow-sm:               0 1rem 1.5rem rgba($black, .25);
 $box-shadow-lg:               0 4rem 6rem rgba($black, .25);
 $box-shadow-inset:            inset 0 1px 2px rgba($black, .075) !default;
@@ -109,7 +109,7 @@ $light-soft: rgba($light, .2);
 $dark-soft: rgba($dark, .2);
 
 //XL Buttons
-$btn-padding-y-xl:            calc(1rem + .5vh);
+$btn-padding-y-xl:            calc(.5rem + .5vh);
 $btn-padding-x-xl:            calc(1rem + 2vw);
 $btn-font-size-xl:            $font-size-base;
 

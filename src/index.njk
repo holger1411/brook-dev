@@ -1,22 +1,23 @@
 ---
 title: Stride HTML Template - Frontpage one
-eleventyExcludeFromCollections: true
 layout: layouts/default.njk
 navbar: navbar1
 footer: footer1
+pagination:
+    data: collections.posts
+    size: 5
+    reverse: true
+    alias: posts
 ---
 <div class="w-100 overflow-hidden position-relative" id="top">
-
   {% include "snippets/hero1.njk" %}
-
 </div>
-
 <div class="container">
-  <div class="row d-flex justify-content-center bg-gray-200 rounded-5">
-    <div class="col-12 col-xl-8 py-vh-5 px-5 text-center">
-      <h2 class="display-2 fw-bolder">Wanna partner with us?</h2>
-      <p class="lead">We believe security should be accessible to every company, no matter the size. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus.</p>
-      <button type="button" class="btn btn-xl btn-outline-primary">Learn more</button>
+  <div class="row d-flex justify-content-center">
+    <div class="col-11 col-lg-10 col-xl-6">
+      <div class="row border-bottom">
+        {% include "snippets/loop.njk" %}
+      </div>
     </div>
   </div>
 </div>

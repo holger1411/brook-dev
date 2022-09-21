@@ -1,0 +1,17 @@
+
+{% set previousPost = collections.posts | getPreviousCollectionItem %}
+{% set nextPost = collections.posts | getNextCollectionItem %}
+<div class="col  border-top border-end py-vh-3 d-flex align-items-center">
+  {% if previousPost %}
+      {% include 'svg/arrow-left.svg' %} <a href="{{ previousPost.url }}" class="ms-2 display-6">{{ previousPost.data.title }}</a>
+      {% else %}
+      <div class="h1 text-muted display-4 opacity-25 fw-bolder">This is the End for You my Friend!</div>
+  {% endif %}
+</div>
+<div class="col border-top text-end py-vh-3 d-flex align-items-center justify-content-end">
+  {% if nextPost %}
+  <a href="{{ nextPost.url }}" class="me-2 display-6">{{ nextPost.data.title }}</a>{% include 'svg/arrow-right.svg' %}
+{% else %}
+<div class="h1 text-muted display-4 opacity-25 fw-bolder">Puh, you are at the beginning!</div>
+  {% endif %}
+</div>

@@ -6,10 +6,6 @@ body.fixednav {
 
 }
 
-body {
-    letter-spacing:-.02rem;
-}
-
 .btn,
 .navbar-collapse.collapsing,
 .megamenu.show,
@@ -27,6 +23,7 @@ a.hover-content,
 a.hover-hide::before,
 a.hover-hide .hover-content,
 .navbar-collapse.collapse.show,
+.navbar-light a.nav-link,
 img {
   transition: all 0.5s ease-in-out 0s;
 }
@@ -34,11 +31,6 @@ img {
 .transform-scale:hover {
   transform: scale(1.5,1.5);
 }
-
-.display-huge {
-  font-size: calc( 5rem + 3vw );
-}
-
 
 .intro-content::first-letter {
     float: left;
@@ -106,7 +98,21 @@ img {
 }
 
 .display-huge {
-    font-size: calc(1.5rem + 1.5vw);
+    font-size: calc(2.5rem + 1.5vw);
     font-weight:700;
-    letter-spacing: -.2rem;
+letter-spacing:-.02rem;
+}
+
+.navbar-light a.nav-link {
+  color:$black;
+    border-bottom:2px solid transparent;
+    margin:0 1rem;
+    font-size:1.33rem;
+}
+.navbar-expand-lg .navbar-nav a.nav-link {
+  padding-left:0rem;
+      padding-right:0rem;
+}
+.navbar-light a.nav-link:hover {
+  border-bottom:2px solid $black;
 }

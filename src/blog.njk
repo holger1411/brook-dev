@@ -1,0 +1,24 @@
+---
+title: Journal
+layout: layouts/default.njk
+navbar: navbar1
+footer: footer1
+permalink: blog.html
+pagination:
+    data: collections.posts
+    size: 5
+    reverse: true
+    alias: posts
+---
+<div class="container">
+  <div class="row d-flex justify-content-center">
+    <div class="col-12 text-center py-vh-5">
+      <h1>{{title}}</h1>
+    </div>
+    <div class="col-11 col-lg-10 col-xl-6">
+      <div class="row border-bottom">
+        {% include "snippets/loop.njk" %}
+      </div>
+    </div>
+  </div>
+</div>
