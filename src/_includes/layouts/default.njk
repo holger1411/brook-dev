@@ -7,7 +7,7 @@
 
   <body {% if (bodyModifier) %} class="{{ bodyModifier }}" {% endif %} data-bs-spy="scroll"  data-bs-target="#navScroll">
 
-    {% include "snippets/" + navbar + ".njk" %}
+    {% include "snippets/navbar1.njk" %}
     <main>
       {{ content | safe }}
     </main>
