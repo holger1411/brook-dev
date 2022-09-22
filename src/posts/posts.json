@@ -2,6 +2,7 @@
     "layout": "layouts/post.njk",
     "navbar": "navbar1",
     "footer": "footer1",
+    "permalink": "post-{{ title | slugify }}.html",
     "tags": [
       "posts"
     ]

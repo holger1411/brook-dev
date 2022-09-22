@@ -1,7 +1,7 @@
 {
-  "name": "Abstral",
-  "version": "0.0.1",
-  "description": "A clean Bootstrap 5 template",
+  "name": "Brook",
+  "version": "1.0.0",
+  "description": "A ultra clean Eleventy Blogging template",
   "license": "MIT",
   "private": "true",
   "publishConfig": {
