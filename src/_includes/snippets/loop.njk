@@ -4,7 +4,3 @@
       <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
     </article>
   {% endfor %}
-
-  {% if pagination.href.previous %}
-    <a href="{{pagination.href.previous}}" class="btn btn-outline-primary">< Previous Page</a> {% endif %} </div> <div class="col text-end"> {% if pagination.href.next %} <a href="{{pagination.href.next}}" class="btn btn-outline-primary">Next Page ></a>
-  {% endif %}

@@ -1,0 +1,12 @@
+
+<div class="row d-flex justify-content-between align-items-center py-vh-1">
+  <div class="col-auto p-0">
+  {% if pagination.href.previous %}
+    <a href="{{pagination.href.previous}}" class="text-decoration-none lh-1">{% include 'svg/arrow-left-circle.svg' %} Newer Articles</a>
+  {% endif %}
+</div>
+  <div class="col-auto p-0">
+  {% if pagination.href.next %}
+    <a href="{{pagination.href.next}}" class="text-decoration-none lh-1">Older Articles  {% include 'svg/arrow-right-circle.svg' %}</a>
+  {% endif %}
+</div>
