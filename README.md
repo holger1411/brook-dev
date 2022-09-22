@@ -1,4 +1,4 @@
-# Stride. - A free and open source Bootstrap 5 website template
+# Brook. - A free and open source Eleventy 2 + Bootstrap 5 blog template
 
 **Live Demo at**: <a href="https://templatedeck.com/" target="_blank">templatedeck.com</a>
 
