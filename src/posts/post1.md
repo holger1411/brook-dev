@@ -3,6 +3,7 @@ title: Why Zombies are slow
 date: 2022-10-31
 author: John Doe
 img: colorful
+imgAlt: This is the image alt tag
 summary: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat diam voluptua.
 ---
 

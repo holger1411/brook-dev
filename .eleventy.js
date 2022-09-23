@@ -4,21 +4,6 @@ const rssPlugin = require('@11ty/eleventy-plugin-rss');
 const Image = require("@11ty/eleventy-img");
 const EleventyFetch = require("@11ty/eleventy-fetch");
 
-(async () => {
-  let url = "https://images.unsplash.com/photo-1535882686-b1332af6f51e";
-  let stats = await Image(url, {
-    widths: [1980],
-    formats: ["jpeg"],
-    outputDir: "./src/img",
-    cacheOptions: {
-      duration: "1d",
-      directory: ".cache",
-      removeUrlQueryParams: false,
-    }
-  });
-  console.log( stats );
-})();
-
 module.exports = function(eleventyConfig) {
   // Universal Shortcodes (Adds to Liquid, Nunjucks, Handlebars)
   eleventyConfig.addShortcode("bgImg", function(imgName, test) {
