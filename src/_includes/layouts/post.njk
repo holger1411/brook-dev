@@ -1,3 +1,6 @@
+---
+permalink: "subdir/{{ title | slugify }}/index.html"
+---
 <!doctype html>
 <html class="h-100" lang="{{ metadata.language }}">
   <head>
@@ -16,7 +19,7 @@
         {% if img %}
           <div class="row">
             <div class="col-12">
-              <img src="/img/webp/{{img}}.webp" class="img-fluid" alt="{{imgAlt}}">
+              <img src="img/webp/{{img}}.webp" class="img-fluid" alt="{{imgAlt}}">
             </div>
           </div>
         {% endif %}

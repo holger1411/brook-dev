@@ -3,12 +3,17 @@ const navigationPlugin = require('@11ty/eleventy-navigation');
 const rssPlugin = require('@11ty/eleventy-plugin-rss');
 const Image = require("@11ty/eleventy-img");
 const EleventyFetch = require("@11ty/eleventy-fetch");
+const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 
 module.exports = function(eleventyConfig) {
   // Universal Shortcodes (Adds to Liquid, Nunjucks, Handlebars)
   eleventyConfig.addShortcode("bgImg", function(imgName, test) {
     return `  style="background-image: url('./img/webp/${imgName}.webp');"`;
   });
+
+
+  //Base Plugin
+    eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 
   // blogposts collection
     eleventyConfig.addCollection("components", function (collection) {
