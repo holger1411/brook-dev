@@ -1,22 +1,22 @@
-# Brook. - A free and open source Eleventy 2 + Bootstrap 5 blog template
+# Brook. - A free and open source Eleventy 3 + Bootstrap 5 blog template
 
 **Live Demo at**: <a href="https://templatedeck.com/" target="_blank">templatedeck.com</a>
 
 ## What is Brook?
-Brook is a static HTML website template. Open sources and free to use.
-It utilizes <a href="https://getbootstrap.com/" target="_blank">Bootstrap 5</a> and the the static site generator <a href="https://www.11ty.dev/" target="_blank">Eleventy</a> .
+Brook is a static HTML website template. Open source and free to use.
+It utilizes <a href="https://getbootstrap.com/" target="_blank">Bootstrap 5</a> and the static site generator <a href="https://www.11ty.dev/" target="_blank">Eleventy</a>.
 
-## How to use it as beginner
-If you are familia with basic HTML but if you are not a web developer with advanced skills you can use Brook es well. Just use the `/public` folder of this repository. Change the content, add some of your images and transfer it to your webserver/webspace. Thats it
+## How to use it as a beginner
+If you are familiar with basic HTML but if you are not a web developer with advanced skills you can use Brook as well. Just use the `/public` folder of this repository. Change the content, add some of your images and transfer it to your webserver/webspace. That's it
 
 ## How to use Brook if you have some advanced web development knowledge
-Brook based on Bootstrap 5 and the static site generator Eleventy. It also comes with npm support for dependency management and Gulp as task runner.
-In this setup I used the template language Nunjucks (by Mozilla) but Eleventy also supports Liquid, Handelbars, Haml, Pug, Mustach to name a few. Vanilla JS, static HTML or even Markdown files are also possible. It also lets you mix differend template languages together.
-Eleventy also allows differend data types and ways to incorporate content during the deployment. You can use static and local content, compute content programatically, you can consume API´s, you can use the font matter format in files iteself, markdown content files etc.
-Basically Brook is a all in on boilerplate for static websites + an example of design and layout.
+Brook is based on Bootstrap 5 and the static site generator Eleventy. It also comes with npm support for dependency management and Gulp as task runner.
+In this setup I used the template language Nunjucks (by Mozilla) but Eleventy also supports Liquid, Handlebars, Haml, Pug, Mustache to name a few. Vanilla JS, static HTML or even Markdown files are also possible. It also lets you mix different template languages together.
+Eleventy also allows different data types and ways to incorporate content during the deployment. You can use static and local content, compute content programmatically, you can consume API's, you can use the front matter format in files itself, markdown content files etc.
+Basically Brook is an all-in-one boilerplate for static websites + an example of design and layout.
 
 ## Requirements
-You need Node (at least v14+) on your computer. To check if you have node and what version run this command in your terminal:
+You need Node (at least v18+) on your computer. To check if you have node and what version run this command in your terminal:
 ```
 node --version
 ```
@@ -34,17 +34,17 @@ To build your static website for local development run:
 ```
 npm run build-dev
 ```
-This will build the static website into the `/dev` folder without all the minifiying and purging stuff (<- much faster and a more human friendly code output, but a much bigger package)
+This will build the static website into the `/dev` folder without all the minifying and purging stuff (<- much faster and a more human friendly code output, but a much bigger package)
 
 ## Run in dev mode
 To run the build-dev task automatically on file changes run:
 ```
 npm run watch
 ```
-That will run a local server from `/dev` folder and connects browser sync to it. On changes within the `/src` folder it will run the `npm run build-dev` command automatically and will refresh your browser.
+That will run a local server from `/dev` folder and connect browser sync to it. On changes within the `/src` folder it will run the `npm run build-dev` command automatically and will refresh your browser.
 
 ## Build it for prod
-If you are done with your dev work and happy with it its time to deploy your static website into the wild wild west (www). To build your static website for a prod deployment run:
+If you are done with your dev work and happy with it it's time to deploy your static website into the wild wild west (www). To build your static website for a prod deployment run:
 ```
 npm run build
 ```
