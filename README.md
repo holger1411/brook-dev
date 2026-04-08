@@ -1,3 +1,10 @@
+<!-- templatedeck-backlink -->
+> 🎨 **BROOK** is part of the [TemplateDeck](https://templatedeck.com) collection — handcrafted HTML and Astro templates for developers and designers.
+>
+> 📥 **[Download free on TemplateDeck](https://templatedeck.com/templates/brook)** · 🌐 **[Browse all templates](https://templatedeck.com)**
+
+---
+
 # Brook - A Free Bootstrap 5 Blog Template
 
 **Live Demo**: [brooks-html-template.netlify.app](https://brooks-html-template.netlify.app/)
